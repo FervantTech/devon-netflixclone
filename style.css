@@ -1,25 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
-    box-sizing: border-box;
     color: white;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 
 }
-
+body {
+    overflow-x: hidden;
+}
 header{
     width: 100%; 
-    height: 100vh;
-    background-image: url(./Assets/Background-img.png);
+    height: 108.5vh;
+    background-image:  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./Assets/Banner.jpg) ;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
- 
+    position: relative;
+
 
 }
+.navbar{
+    padding-top: 2px;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+
+}
+.nav-items{
+    height:  88px;
+    width: 1213px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 .logo{
-    width: 300px;
+   
+    width: 150px;
+ 
+}
+.sign-in{
+    height: 32px;
+    width: 76px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+    background-color: rgb(229, 9, 20);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+ .sign-in:hover{
+    background-color: rgb(193, 17, 25);
+}
+
+.banner-container{
+height: 580px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 135px;
+
+}
+
+.banner-container  h1{
+    font-size: 70px;
+    font-weight: 900;
+}
+.banner-container p{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.banner-container h3{
+    font-size: 17px;
+    font-weight: 0;
+    margin-top: 30px;
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.get-started{
+    width: 676px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.get-started .email-input{
+    width: 70%;
+    height: 55px;
+    background-color: rgb(22, 22, 22);
+    cursor: text;
+    opacity: 70%;
+    border: solid rgb(118, 118, 118) 1px;
+    border-radius: 3px;
+    padding-inline: 10px;
+    margin-right: 10px;
+}  
+.email-input::placeholder{
+    color: white;
+    font-size: 17px;
+    font-weight: 0;
+} 
+ .get-started .get-started-button{
+    width :30% ;
+    font-size: 25px;
+    font-weight: 0;
+    background-color: rgb(229, 9, 20);
+
+    border: none;
+    border-radius: 3px;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+ }
+ .get-started-button:hover{
+    background-color: rgb(193, 17, 25);
+}
+.curve{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 90px;
+
+    overflow: hidden;
+    z-index: 2;
+
+}
+
+.curve-in{ 
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 140%;
+    height: 200px;
+
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+
+    background: linear-gradient(to right,rgba(33, 13, 22, 1) 16%,rgba(184, 40, 105, 1),rgba(229, 9, 20, 1),rgba(184, 40, 105, 1),rgba(33, 13, 22, 1) 84%);top: 0;
+
+}
+.curve-out{
+    position: absolute;
+    inset: 3px;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    background: radial-gradient(50% 500% at 50% -420%,rgba(64, 97, 231, 0.4) 80%,rgba(0, 0, 0, 0.1) 94%),black;
 }
 
 main{
-    background-color: black;
+    padding: 0 55px;
+    background-color: black;  
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+main h2{
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+
+.trending-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div span{
+    color: black;
+    -webkit-text-stroke: 2px white;
+    font-weight: 700;
+    font-size: 140px;
+    position: relative;
+    right: 20px;
+}
+
+div.shows{
+    width: 214px;
+    height: 300px;
+    margin: 0 40px 0 0;
+    display: flex;
+    align-items: end;
+    margin-bottom: 70px;
+}
+#show1{
+    background:  url(./Assets/Card1);
+    background-size: cover;
+    border-radius: 5px;
+}
+#show2{
+    background:  url(./Assets/Card2);
+    background-size: cover;
+    border-radius: 5px;
+}
+#show3{
+    background:  url(./Assets/Card3);
+    background-size: cover;
+    border-radius: 5px;
+}
+#show4{
+    background:  url(./Assets/Card4);
+    background-size: cover;
+    border-radius: 5px;
+}
+#show5{
+    background:  url(./Assets/Card5);
+    background-size: cover;
+    border-radius: 5px;
+}
+.reasons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.reasons{
+    width: 214px;
+    height: 300px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    margin: 0 40px 0 0;
+ 
