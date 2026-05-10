@@ -169,18 +169,19 @@ margin-top: 135px;
 main{
     padding: 0 55px;
     background-color: black;  
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 main h2{
     color: white;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 800;
-    margin-bottom: 60px;
+    margin: 40px 0 20px 240px;
+    align-self: flex-start;
 }
-
+/* TRENDING CONTAINER */
 .trending-container{
     display: flex;
     flex-direction: row;
@@ -228,14 +229,97 @@ div.shows{
     background-size: cover;
     border-radius: 5px;
 }
+/* REASONS CONTAINER */
+div.reasons{
+    width: 230px;
+    height: 260px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    margin: 0 15px 0 0;
+    border-radius: 16px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: flex-start;   
+
+}  
 .reasons-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-div.reasons{
-    width: 214px;
-    height: 300px;
-    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
-    margin: 0 40px 0 0;
- 
+.reasons-container h3{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.reasons h3 {
+    text-align: left;
+    align-self: flex-start;
+}
+.reasons-container p{
+    color: #ffffffb3;
+    font-size: 17px;
+    font-weight: 400;
+}
+.icons{
+    width: 80px;
+    align-self: flex-end; 
+}
+
+.faq {
+    width: 100%;
+    max-width: 900px;
+    margin: 80px auto;
+    color: white;
+}
+
+.faq h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+details {
+    background: #2d2d2d;
+    padding: 20px;
+    cursor: pointer;
+}
+details:hover {
+    background: #414141;
+}
+summary {
+    font-size: 20px;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::after {
+    content: "+";
+    font-size: 24px;
+}
+
+details[open] summary::after {
+    content: "×";
+}
+
+details p {
+    margin-top: 15px;
+    color: #ccc;
+    font-size: 16px;
+}
+  
