@@ -60,11 +60,9 @@ header{
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
-
  .sign-in:hover{
     background-color: rgb(193, 17, 25);
 }
-
 .banner-container{
 height: 580px;
 display: flex;
@@ -74,7 +72,6 @@ justify-content: center;
 margin-top: 135px;
 
 }
-
 .banner-container  h1{
     font-size: 70px;
     font-weight: 900;
@@ -142,7 +139,6 @@ margin-top: 135px;
     z-index: 2;
 
 }
-
 .curve-in{ 
     position: absolute;
 
@@ -165,7 +161,6 @@ margin-top: 135px;
     border-top-right-radius: 50% 100%;
     background: radial-gradient(50% 500% at 50% -420%,rgba(64, 97, 231, 0.4) 80%,rgba(0, 0, 0, 0.1) 94%),black;
 }
-
 main{
     padding: 0 55px;
     background-color: black;  
@@ -181,7 +176,7 @@ main h2{
     margin: 40px 0 20px 240px;
     align-self: flex-start;
 }
-/* TRENDING CONTAINER */
+/* TRENDING SECTION */
 .trending-container{
     display: flex;
     flex-direction: row;
@@ -195,7 +190,6 @@ div span{
     position: relative;
     right: 20px;
 }
-
 div.shows{
     width: 214px;
     height: 300px;
@@ -229,7 +223,7 @@ div.shows{
     background-size: cover;
     border-radius: 5px;
 }
-/* REASONS CONTAINER */
+/* REASONS SECTION */
 div.reasons{
     width: 230px;
     height: 260px;
@@ -269,57 +263,66 @@ div.reasons{
     width: 80px;
     align-self: flex-end; 
 }
-
+/* FAQ SECTION */
 .faq {
-    width: 100%;
-    max-width: 900px;
-    margin: 80px auto;
+    width: 1200px;
+    max-width: 1200px;
+
     color: white;
 }
-
 .faq h2 {
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 20px;
 }
-
 .faq-item {
     margin-bottom: 10px;
+    
 }
-
 details {
     background: #2d2d2d;
-    padding: 20px;
+    padding: 5px 20px 5px 10px;
     cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 details:hover {
     background: #414141;
 }
 summary {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 400;
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 15px;
 }
-
 summary::-webkit-details-marker {
     display: none;
 }
-
 details summary::after {
     content: "+";
-    font-size: 24px;
+    font-size: 60px;
+    font-weight: 100;
 }
-
 details[open] summary::after {
     content: "×";
 }
-
 details p {
     margin-top: 15px;
-    color: #ccc;
-    font-size: 16px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 15px;
+    padding-bottom: 17px;
+}
+
+#get-started-h3{
+    font-size: 17px;
+    font-weight: 0;
+    margin-top: 30px;
 }
   
