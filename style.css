@@ -243,6 +243,7 @@ div.reasons{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-right: 95px;
 }
 .reasons-container h3{
     color: white;
@@ -267,7 +268,7 @@ div.reasons{
 .faq {
     width: 1200px;
     max-width: 1200px;
-
+    margin-right: 110px;
     color: white;
 }
 .faq h2 {
@@ -325,7 +326,7 @@ details p {
     margin-top: 30px;
 }
 footer{
-    padding: 30px 350px 0 350px;
+    padding: 100px 350px 0 300px;
     background-color: black;  
     min-height: 40vh;
     display: flex;
